@@ -33,3 +33,10 @@ The Vagrant file and Vagrantbox are based on those provided by [Data Science Too
 
 ## Now what?
 Have fun, hack, contribute!  This is just a starting point, I'd love to see where people take this!
+
+## Batch "dreamify"
+ * `vagrant ssh`
+ * Install [Node.js](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server)
+ * `cd /vagrant`
+ * `nodejs index.js <input JPEG filename>`
+ * Freak out!
