@@ -5,16 +5,13 @@ var keys    = require("./keys.json"),
 if (!input) {
     console.log("\033[31mFile not specified\n\033[0m");
     process.exit();
-
 }
 
 dreamify();
 
 function CmdExec(cmd, args, cbEnd) {
-    var spawn, child;
-
-    spawn = require("child_process").spawn;
-    child = spawn(cmd, args);
+    var spawn = require("child_process").spawn,
+        child = spawn(cmd, args);
 
     child.on("error", function (err) {
         console.log("\033[31m" + err.toString() + ", command:", cmd, args.join(" "), "\n\033[0m");
